@@ -1,0 +1,217 @@
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+ 
+%% AltaCV uses the fontawesome5 and academicons fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the page layout if you need to
+\geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=1cm,columnsep=0.75cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% ----- LIGHT MODE -----
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{PrimaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+\pagecolor{BackgroundColor}   
+% ----- DARK MODE -----
+%\definecolor{BackgroundColor}{HTML}{242424}
+%\definecolor{SlateGrey}{HTML}{6F6F6F}
+%\definecolor{LightGrey}{HTML}{ABABAB}
+%\definecolor{PrimaryColor}{HTML}{3F7FFF}
+%\colorlet{name}{PrimaryColor}
+%\colorlet{tagline}{PrimaryColor}
+%\colorlet{heading}{PrimaryColor}
+%\colorlet{headingrule}{PrimaryColor}
+%\colorlet{subheading}{PrimaryColor}
+%\colorlet{accent}{PrimaryColor}
+%\colorlet{emphasis}{LightGrey}
+%\colorlet{body}{LightGrey}
+%\pagecolor{BackgroundColor}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+%% \addbibresource{sample.bib}
+
+\begin{document}
+\name{Emil Redzik}
+\tagline{}
+%% You can add multiple photos on the left or right
+\photoL{4cm}{emil-redzik}
+
+\personalinfo{
+    \email{emilredzik1994@email.com}\smallskip
+    \phone{+48-500-353-785}
+    \location{Warszawa, Polska}\\
+    \linkedin{emil-redzik}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0}
+
+\begin{paracol}{1}
+
+    % ----- ABOUT ME -----
+    \cvsection{About Me}
+    \begin{quote}
+        Data scientist i inżynier danych. Fascynat bayesowskich metod modelowania danych.
+    \end{quote}
+    % ----- ABOUT ME -----
+
+    % ----- EXPERIENCE -----
+    \cvsection{Doświadczenie}
+    \cvevent{Kontraktor }{| mBank | Departament Hurtowni Danych}{06/2019 -- }{}
+    Rozwój i utrzymanie systemu ALM służącego do wyliczeń ryzyka płynności.\break
+
+    \begin{itemize}
+        \item Masowa refaktoryzacja kodu skutkująca skróceniem czasu dziennych przetwarzań o ok 50\% (8h -> 4h)
+        \item Budowa modułu liczącego wskaźnik LCR
+        \item Przygotowanie POC przeniesienia systemu na technologię Spark
+    \end{itemize}
+    \divider
+
+    \cvevent{Specjalista }{| PKO S.A. | Departament Ryzyka Kredytowego}{02/2018 -- 05/2019}{}
+    \begin{itemize}
+        \item Przebudowa procesu liczenia bazy klientów pre-approved skutkująca zwiększeniem sprzedaży kredytów przy jednoczesnym braku podwyższenia poziomu ryzyka tej populacji
+        \item Modelowanie dochodów klientów
+    \end{itemize}
+    \divider
+
+    \cvevent{Młodszy specjalista }{| Bank Pocztowy S.A. | Departament Ryzyka Kredytowego}{01/2017 -- 01/2018}{}
+    \begin{itemize}
+        \item Zbudowanie procesu zasilającego departamentowe repozytoria danych aplikacyjnych z procesu kredytowego
+        \item Miesięczne raportowanie zarządcze nowego portfela kredytowego
+        \item Stworzenie algorytmu optymalizującego siatki cenowe kredytów (risk-based pricing)
+    \end{itemize}
+    \divider
+
+    \cvevent{Administrator baz danych }{| PZU S.A.}{12/2015 -- 12/2016}{}
+    \begin{itemize}
+        \item Utrzymanie hurtowni danych
+        \item Budowa narzędzi automatyzujących pracę deweloperów
+        \item Przygotowywanie wdrożeń, środowisk deweloperskich, instalacja oprogramowania
+    \end{itemize}
+
+    % ----- EDUCATION -----
+    \cvsection{Wykształcenie}
+    \cvevent{Analiza danych big data }{| Szkoła Główna Handlowa}{09/2017 -- 01/2019}{Warszawa}
+    \begin{itemize}
+        \item Przerwane
+    \end{itemize}
+    \divider
+    \newpage
+    \cvevent{Metody ilościowe w ekonomii i systemy informacyjne }{| Szkoła Główna Handlowa}{09/2017 -- 01/2019}{Warszawa}
+    \begin{itemize}
+        \item Specjalizacja - Metody analizy decyzji
+        \item Praca licencjacka - "Porównanie skuteczności modeli CAPM i Famy-Frencha do oceny ryzyka inwestycyjnego na polskiej giełdzie"
+        \item Prowadzenie warsztatów dla studentów w ramach koła naukowego informatyki z SQL, SAS 4GL, Excel
+    \end{itemize}
+    % ----- EDUCATION -----
+
+    % ----- PROJECTS -----
+    \cvsection{Projekty}
+    \cvevent{Analiza warszawskiego rynku nieruchomości }{\cvrepo{| \faGithub}{https://github.com/eredzik/flats_scraper}}{06/2020 -- }{}
+    \begin{itemize}
+        \item Web scraping portali mieszkaniowych
+        \item Deployment za pomocą dockera
+        \item Zapisywanie zebranych danych w bazie danych
+    \end{itemize}
+    % \divider
+
+    \cvsection{Umiejętności}
+
+    \cvlang{Modelowanie statystyczne}{Zaawansowany}\\
+    \begin{itemize}
+        \item Modelowanie nadzorowane (modele liniowe, nieliniowe)
+        \item Modelowanie nienadzorowane (kmeans, dbscan, GMM, klasteryzacja hierarchiczna)
+        \item Testy statystyczne
+        \item Metodologia bayesowska (budowa modelu, walidacja zbieżności, testowanie hipotez, predykcja - wykorzystanie pymc3)
+        \item Modele machine learningowe - sieci neuronowe(wykorzystanie pytorch), xgboost
+        \item Znajomość metodologii IRB do budowy modeli ryzyka kredytowego
+    \end{itemize}
+
+    \divider
+    \cvlang{Python}{Średniozaawansowany}\\
+    \begin{itemize}
+        \item Analiza danych: pandas, numpy, matplotlib, pymc3, pyspark, statsmodels, sklearn, pytorch
+        \item Webscraping: requests, beautifulsoup, lxml, xpath
+        \item Podstawy budowy stron internetowych/dashboardów webowych: flask, dash/bokeh
+    \end{itemize}
+    \divider
+    \cvlang{SAS}{Zaawansowany}\\
+    \quad BASE, STAT, SQL, Makroprogramowanie, DI Studio, Management Console, Risk Dimensions
+
+    \divider
+    \cvlang{MS SQL}{Średniozaawansowany}\\
+    \quad SQL, kursory
+    % ----- LANGUAGES -----
+
+    \cvsection{Języki}
+    \cvlang{Angielski}{Zaawansowany / C1}
+    \divider
+
+    \cvlang{Hiszpański}{Komunikatywny / B1}
+    \divider
+
+    \cvlang{Niemiecki}{Podstawowy / A2}
+
+
+\end{paracol}
+\center\vspace*{\fill}
+\tiny
+Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji (zgodnie z ustawą z dnia 10 maja 2018 roku o ochronie danych osobowych (Dz. Ustaw z 2018, poz. 1000) oraz zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (RODO).
+\end{document}

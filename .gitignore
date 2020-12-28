@@ -1,0 +1,10 @@
+*.aux
+*.fls
+*.log
+*.out
+*.gz
+*.pdf
+*.bcf
+*.xmpi
+*.xml
+*.fdb_latexmk
