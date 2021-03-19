@@ -143,8 +143,8 @@
               \pl{Rozwój i utrzymanie systemów liczących bieżące ryzyko płynności i raportujących je.}
               \en{Development and maintenance of bank liquidity calculation systems}
         \item
-              \pl{Refaktoryzacja kodu skutkująca skróceniem czasu dziennych przetwarzań o ok 50\% (8h -> 4h)}
-              \en{Refactorization of code within the systems to reduce the time of daily calculations by 50\% (8h -> 4h)}
+              \pl{Optymalizacje procesu skutkujące skróceniem dziennego czasu oczekiwania analityków na dane do raportowania o ok 50\% (8h -> 4h)}
+              \en{Optimized risk calculation process which resulted in 50\% (8h -> 4h) reduction of time in which analysts had to wait for data daily}
         \item
               \pl{Budowa nowych modułów na potrzeby raportowania zarządczego i nadzorczego}
               \en{Development of new modules for management and supervisory reporting}
@@ -152,8 +152,8 @@
               \pl{Budowa pakietu w pythonie do wygodniejszego zarządzania systemem zbudowanym w SAS}
               \en{Created python library for easier use of system for analysts not familiar with SAS}
         \item
-              \pl{Przygotowanie proof of concept przeniesienia systemu z SAS na Spark}
-              \en{Prepared proof of concept proving possible benefits of migration from SAS to Spark}
+              \pl{Migracja systemu liczenia płynności z SAS na pySARK}
+              \en{Migrated liquidity calculation system from SAS to pySPARK}
     \end{itemize}
     \textcolor{accent}{
         Python, GIT, SAS, Spark, PL/SQL
@@ -173,6 +173,13 @@
                   sprzedaży kredytów przy jednoczesnym braku podwyższenia poziomu ryzyka tej populacji}
               \en{Recreated process of calculating pre-approved customers database resulting in increased
                   credit sales while maintaining same level of risk
+              }
+        \item
+              \pl {Współpraca z departamentami marketingu i sprzedaży w celu optymalizacji procesu sprzedaży
+                  kredytów pod względem sprzedażowym i z punktu widzenia ryzyka
+              }
+              \en {Cooperated with sales and marketing departments to optimize
+                  credit sales process to maximize sales while taking risk measures into account
               }
         \item
               \pl{Budowa modelu regresji kwantylowej prognozującego dochody klientów oświadczeniowych (wykrywanie odstających oświadczeń)}
@@ -196,6 +203,8 @@
         \item
               \pl{Miesięczne raportowanie zarządcze nowego portfela kredytowego}
               \en{Monthly management reporting of credit application data}
+        \item \pl{Budowa narzędzi wspierających modelowanie ryzyka kredytowego klientów}
+              \en{Created tools to support modelling of credit risk}
         \item
               \pl{Stworzenie algorytmu optymalizującego siatki cenowe kredytów (risk-based pricing)}
               \en{Created algorithm which performed risk based optimization of credits' prices}
@@ -233,10 +242,10 @@
         \pl{Warszawa}
         \en{Warsaw}}
     \begin{itemize}
-        \item \pl{Przerwane} \en{Interrupted}
+        \item \pl{Przerwane na ostatnim semestrze} \en{Interrupted on last semester}
     \end{itemize}
     \divider
-    \newpage
+    % \newpage
     \cvevent{
         \pl{Metody ilościowe w ekonomii i systemy informacyjne}
         \en{Quantitative methods in economics and information systems} }{|
@@ -266,14 +275,14 @@
         \en{Polish real estate market analysis } }{\cvrepo{| \faGithub}{https://github.com/eredzik/flats_scraper}}{06/2020 -- }{}
     \begin{itemize}
         \item
-              \pl{Web scraping portali mieszkaniowych}
-              \en{Web scraping of real estate advertisement websites}
-        \item
-              \pl{Deployment projektu w chmurze}
-              \en{Deployment in AWS Cloud}
-        \item
-              \pl{Zapisywanie zebranych danych w bazie danych}
-              \en{Data stored in database for further modelling and dashboarding}
+              \pl{Web scraping portali mieszkaniowych, zapisanie zebranych danych w bazie danych, deployment na AWS }
+              \en{Web scraping of real estate advertisement websites, storage in Postgres, deployment on AWS }
+    \end{itemize}
+    \cvevent{
+        \pl{Aplikacja opensource dla rozliczania zobowiązań podatkowych dla JDG}
+        \en{Opensource app for small enterprises for basic taxes calculation} }{\cvrepo{| \faGithub}{https://github.com/eredzik/vatcalc}}{03/2021 -- }{}
+    \begin{itemize}
+        \item Frontend: Elm, Backend: Python, GraphQL, Fastapi
     \end{itemize}
     % \divider
 
@@ -302,23 +311,19 @@
               \en{Knowledge of IRB metodology in context of credit risk modelling}
     \end{itemize}
 
-    \divider
+    % \divider
     \cvlang{Python}{
         \pl{Średniozaawansowany}
         \en{Medium}}\\
     \begin{itemize}
         \item
-              \pl{Analiza danych: pandas, numpy, matplotlib, pymc3, pyspark, statsmodels, sklearn, pytorch}
-              \en{Data analysis: pandas, numpy, matplotlib, pymc3, pyspark, statsmodels, sklearn, pytorch}
-        \item Webscraping: requests, beautifulsoup, lxml, xpath
+              \pl{Analiza danych: numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
+              \en{Data analysis: numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
         \item
-              \pl{Przetwarzanie danych: sqlalchemy, prefect}
-              \en{Data processing: sqlalchemy, prefect}
-        \item
-              \pl{Podstawy budowy stron internetowych/dashboardów webowych: flask, dash/bokeh}
-              \en{Dashboarding: flask, dash}
+              \pl{Inżynieria danych/backend: sqlalchemy, pyspark, pandas, fastapi, graphql(graphene), dash/plotly}
+              \en{Data engineering/backend: sqlalchemy, pyspark, pandas, fastapi, graphql(graphene), dash/plotly}
     \end{itemize}
-    \divider
+    % \divider
     \cvlang{SAS}{
         \pl{Zaawansowany}
         \en{Advanced}}\\
@@ -327,14 +332,14 @@
               \pl{BASE, STAT, SQL, Makroprogramowanie, DI Studio, Management Console, Risk Dimensions}
               \en{BASE, STAT, SQL, Macroprogramming, DI Studio, Management Console, Risk Dimensions}
     \end{itemize}
-    \divider
+    % \divider
     \cvlang{
         \pl{Inne}
         \en{Other}}{}\\
     \begin{itemize}
         \item
-              \pl{GIT, SQL, LaTeX, Docker, podstawy AWS, bash}
-              \en{GIT, SQL, LaTeX, Docker, AWS basics, bash}
+              \pl{Elm, GIT, SQL, LaTeX, Docker, AWS, bash, GraphQL}
+              \en{Elm, GIT, SQL, LaTeX, Docker, AWS, bash, GraphQL}
     \end{itemize}
     % ----- LANGUAGES -----
 
