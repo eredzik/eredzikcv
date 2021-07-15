@@ -13,7 +13,7 @@
 \documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
 \newif\ifen
 \newif\ifpl
-\entrue
+\pltrue
 
 \newcommand{\en}[1]{\ifen#1\fi}
 \newcommand{\pl}[1]{\ifpl#1\fi}
@@ -134,8 +134,8 @@
         \pl{Inżynier danych}
         \en{Data engineer}
     }{| Accenture |
-        \pl{Branża ubezpieczeniowa}
-        \en{Insurance industry firm}
+        \pl{Projekt dla jednego z liderów branży ubezpieczeniowej}
+        \en{Project for one of insurance leaders}
     }{06/2021 -- }{}
 
     \begin{itemize}
@@ -144,7 +144,9 @@
                   z wielu różnorodnych źródeł zewnętrznych.}
               \en{Development of data processing, integration and presentation of environment
                   responsibility data from various outside vendors.}
-
+        \item
+              \pl {Praca z danymi w postaci grafu.}
+              \en {Work with graph based data.}
     \end{itemize}
     \textcolor{accent}{
         Spark, Python, GIT, Palantir Foundry
@@ -177,7 +179,7 @@
               \en{Migration of liquidity calculation system from SAS to pyspark}
     \end{itemize}
     \textcolor{accent}{
-        Python, GIT, SAS, Spark, PL/SQL
+        Python, GIT, SAS, Spark, PL/SQL, Jupyter notebooks
     }
 
     \divider
@@ -206,7 +208,7 @@
               \pl{Budowa modelu regresji kwantylowej prognozującego dochody klientów oświadczeniowych (wykrywanie odstających oświadczeń)}
               \en{Building a quantile regression models of customers' stated income (detection of potentially fraudulent statements)}
     \end{itemize}
-    \textcolor{accent}{Python, GIT, SAS, T-SQL}
+    \textcolor{accent}{Python, GIT, SAS, T-SQL, Jupyter notebooks}
 
     \divider
 
@@ -248,7 +250,7 @@
     \textcolor{accent}{SAS, PL/SQL}
 
     % ----- EDUCATION -----
-    \newpage
+    % \newpage
     \cvsection{
         \pl{Wykształcenie}
         \en{Education}
@@ -290,19 +292,20 @@
         \pl{Projekty}
         \en{Projects}}
     \cvevent{
-        \pl{Analiza warszawskiego rynku nieruchomości}
-        \en{Polish real estate market analysis } }{\cvrepo{| \faGithub}{https://github.com/eredzik/flats_scraper}}{06/2020 -- }{}
-    \begin{itemize}
-        \item
-              \pl{Web scraping portali mieszkaniowych, zapisanie zebranych danych w bazie danych, deployment na AWS }
-              \en{Web scraping of real estate advertisement websites, storage in Postgres, deployment on AWS }
-    \end{itemize}
-    \cvevent{
         \pl{Aplikacja opensource dla rozliczania zobowiązań podatkowych dla JDG}
         \en{Opensource app for small enterprises for basic taxes calculation} }{\cvrepo{| \faGithub}{https://github.com/eredzik/vatcalc}}{03/2021 -- }{}
     \begin{itemize}
-        \item Frontend: Elm, Backend: Python, GraphQL, Fastapi
+        \item Frontend: Elm, Backend: Python, GraphQL, Fastapi, PostgreSQL
     \end{itemize}
+    % \cvevent{
+    %     \pl{Analiza warszawskiego rynku nieruchomości}
+    %     \en{Polish real estate market analysis } }{\cvrepo{| \faGithub}{https://github.com/eredzik/flats_scraper}}{06/2020 -- }{}
+    % \begin{itemize}
+    %     \item
+    %           \pl{Web scraping portali mieszkaniowych, zapisanie zebranych danych w bazie danych, deployment na AWS }
+    %           \en{Web scraping of real estate advertisement websites, storage in Postgres, deployment on AWS }
+    % \end{itemize}
+
     % \divider
 
     \cvsection{
@@ -336,11 +339,11 @@
         \en{Advanced}}\\
     \begin{itemize}
         \item
-              \pl{Analiza danych: numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
-              \en{Data analysis: numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
+              \pl{Analiza danych: Jupyter, numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
+              \en{Data analysis: Jupyter, numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
         \item
-              \pl{Inżynieria danych/backend: sqlalchemy, pyspark, pandas, fastapi, graphql(graphene), dash/plotly}
-              \en{Data engineering/backend: sqlalchemy, pyspark, pandas, fastapi, graphql(graphene), dash/plotly}
+              \pl{Inżynieria danych/backend: pyspark, sqlalchemy, pandas, fastapi, dash/plotly}
+              \en{Data engineering/backend: pyspark, sqlalchemy, pandas, fastapi, dash/plotly}
     \end{itemize}
     % \divider
     \cvlang{SAS}{
