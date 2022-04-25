@@ -122,7 +122,8 @@
     }
     \begin{quote}
         \pl{Data scientist i inżynier danych. Fascynat bayesowskich metod modelowania danych.}
-        \en{Data scientist and data engineer fascinated with bayesian methods of data analysis.}
+        \en{Data scientist and data engineer fascinated with bayesian methods of data analysis.
+            Building quality solutions is my highest priority, automated testing is a must. }
     \end{quote}
     % ----- ABOUT ME -----
 
@@ -142,13 +143,16 @@
     \begin{itemize}
         \item
               \pl{TODO}
-              \en{Work on data engineering tasks to integrate data from DWH and unprocessed sources.}
+              \en{Work on data engineering tasks to integrate data from DWH and multiple other data sources in minibatch fashion (near real-time).}
         \item
               \pl {TODO}
               \en {Developing methods for CI/CD, testing data and data pipelines within DWH.}
+        \item
+              \pl{TODO}
+              \en{Created framework for declarative data pipelines similar to DBT but using native PL/SQL procedures and scheduler.}
     \end{itemize}
     \textcolor{accent}{
-        DBT, Python, Oracle Exadata, SAS DI, Git, SVN
+        Python, Oracle Exadata, Git, SAS DI, DBT, SVN
     }
 
     \divider
@@ -168,10 +172,10 @@
                   responsibility data from various outside vendors.}
         \item
               \pl {Praca z danymi w postaci grafu.}
-              \en {Work with graph based data.}
+              \en {Processing graph based data and propagating messages between entities using traversal algorithms.}
     \end{itemize}
     \textcolor{accent}{
-        Spark, Python, Git, Palantir Foundry
+        PySpark, Python, Git, Palantir Foundry
     }
 
     \divider
@@ -201,7 +205,7 @@
               \en{Migration of liquidity calculation system from SAS to pyspark}
     \end{itemize}
     \textcolor{accent}{
-        Python, Git, SAS, Spark, PL/SQL, Jupyter notebooks
+        Python, Git, SAS, Spark, PL/SQL
     }
 
     \divider
@@ -230,7 +234,7 @@
               \pl{Budowa modelu regresji kwantylowej prognozującego dochody klientów oświadczeniowych (wykrywanie odstających oświadczeń)}
               \en{Building a quantile regression models of customers' stated income (detection of potentially fraudulent statements)}
     \end{itemize}
-    \textcolor{accent}{Python, GIT, SAS, T-SQL, Jupyter notebooks}
+    \textcolor{accent}{Python, GIT, SAS 4GL, T-SQL}
 
     \divider
 
@@ -254,7 +258,7 @@
               \pl{Stworzenie algorytmu optymalizującego siatki cenowe kredytów (risk-based pricing)}
               \en{Created algorithm which performed risk based optimization of credits' prices}
     \end{itemize}
-    \textcolor{accent}{SAS, PL/SQL, Oracle DB}
+    \textcolor{accent}{SAS 4GL, Oracle DB, PL/SQL}
 
     \divider
 
@@ -281,13 +285,16 @@
         \pl{Analiza danych big data}
         \en{Big data analysis} }{|
         \pl{Szkoła Główna Handlowa}
-        \en{Warsaw school of economics}}{09/2017 --}{
+        \en{Warsaw school of economics}}{09/2017 - 05/2022}{
         \pl{Warszawa}
         \en{Warsaw}}
     \begin{itemize}
         \item
               \pl{Metody analizy grafów dla danych scoringowych}
-              \en{Graph analysis methods for scoring applications}
+              \en{Graph analysis methods for scoring applications -
+                  thesis analysed potential of new graph based methods for supervised scoring tasks as
+                  well as their semi-supervised potential.
+                  It was done in comparison to more standard approaches such as neural networks and logistic regression.}
     \end{itemize}
     \divider
     % \newpage
@@ -295,7 +302,7 @@
         \pl{Metody ilościowe w ekonomii i systemy informacyjne}
         \en{Quantitative methods in economics and information systems} }{|
         \pl{Szkoła Główna Handlowa}
-        \en{Warsaw school of economics}}{09/2017 -- 01/2019}{
+        \en{Warsaw school of economics}}{09/2014 -- 01/2017}{
         \pl{Warszawa}
         \en{Warsaw}}
     \begin{itemize}
@@ -312,15 +319,15 @@
     % ----- EDUCATION -----
 
     % ----- PROJECTS -----
-    \cvsection{
-        \pl{Projekty}
-        \en{Projects}}
-    \cvevent{
-        \pl{Aplikacja opensource dla rozliczania zobowiązań podatkowych dla JDG}
-        \en{Opensource app for small enterprises for basic taxes calculation} }{\cvrepo{| \faGithub}{https://github.com/eredzik/vatcalc}}{03/2021 -- }{}
-    \begin{itemize}
-        \item Frontend: React(Typescript) Backend: Python, GraphQL, Fastapi, PostgreSQL
-    \end{itemize}
+    % \cvsection{
+    %     \pl{Projekty}
+    %     \en{Projects}}
+    % \cvevent{
+    %     \pl{Aplikacja opensource dla rozliczania zobowiązań podatkowych dla JDG}
+    %     \en{Opensource app for small enterprises for basic taxes calculation} }{\cvrepo{| \faGithub}{https://github.com/eredzik/vatcalc}}{03/2021 -- }{}
+    % \begin{itemize}
+    %     \item Frontend: React(Typescript) Backend: Python, GraphQL, Fastapi, PostgreSQL
+    % \end{itemize}
     % \cvevent{
     %     \pl{Analiza warszawskiego rynku nieruchomości}
     %     \en{Polish real estate market analysis } }{\cvrepo{| \faGithub}{https://github.com/eredzik/flats_scraper}}{06/2020 -- }{}
@@ -353,8 +360,8 @@
               \pl{Modele machine learningowe - sieci neuronowe(wykorzystanie pytorch), xgboost}
               \en{Machine learning methods - neural networks (pytorch), xgboost}
         \item
-              \pl{Znajomość metodologii IRB do budowy modeli ryzyka kredytowego}
-              \en{Knowledge of IRB metodology in context of credit risk modelling}
+              \pl{TODO}
+              \en{Knowledge of graph based machine learning methods}
     \end{itemize}
 
     % \divider
@@ -366,8 +373,8 @@
               \pl{Analiza danych: Jupyter, numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
               \en{Data analysis: Jupyter, numpy, matplotlib, pymc3, statsmodels, sklearn, pytorch}
         \item
-              \pl{Inżynieria danych/backend: pyspark, sqlalchemy, pandas, fastapi, dash/plotly}
-              \en{Data engineering/backend: pyspark, sqlalchemy, pandas, fastapi, dash/plotly}
+              \pl{Inżynieria danych/backend: pyspark (Palantir/czysty), pytest, sqlalchemy, pandas, fastapi, dash/plotly, jinja2}
+              \en{Data engineering/backend: pyspark, (Palantir/on-prem), pytest, sqlalchemy, pandas, fastapi, dash/plotly, jinja2}
     \end{itemize}
     % \divider
     \cvlang{SAS}{
@@ -384,8 +391,8 @@
         \en{Other}}{}\\
     \begin{itemize}
         \item
-              \pl{Elm, React, Typescript, GIT, SQL, LaTeX, Docker, AWS, bash, GraphQL}
-              \en{Elm, React, Typescript, GIT, SQL, LaTeX, Docker, AWS, bash, GraphQL}
+              \pl{React, NextJS, Typescript, GIT, SQL, LaTeX, Docker, AWS, bash, Elm}
+              \en{React, NextJS, Typescript, GIT, SQL, LaTeX, Docker, AWS, bash, Elm}
     \end{itemize}
     % ----- LANGUAGES -----
 
@@ -394,14 +401,12 @@
         \en{Languages}}
 
     \en{\cvlang{Polish}{Native}}
+
     \pl{\cvlang{Angielski}{Zaawansowany / C1}}
     \en{\cvlang{English}{Advanced / C1}}
 
     \pl{\cvlang{Hiszpański}{Komunikatywny / B1}}
     \en{\cvlang{Spanish}{Communicative / B1}}
-
-    \pl{\cvlang{Niemiecki}{Podstawowy / A2}}
-    \en{\cvlang{German}{Basic / A2}}
 
 
 \end{paracol}
